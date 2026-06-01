@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+
+# Local Apps Script tooling state
+.clasp.json
+.clasprc.json
+
+# Local environment files
+.env
+.env.*

@@ -1,0 +1,8 @@
+{
+  "lsp": {
+    "typescript-gs": {
+      "command": ["typescript-language-server", "--stdio"],
+      "extensions": [".gs"]
+    }
+  }
+}

@@ -1,0 +1,2241 @@
+<!DOCTYPE html><html><head>
+      <title>ManabiFolio_comprehensive_documentation</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\caspe\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.20-universal\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\caspe\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.20-universal\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="ManabiFolio-システム包括資料">ManabiFolio システム包括資料 </h1>
+<h2 id="目次">目次 </h2>
+<ol>
+<li><a href="#%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A6%82%E8%A6%81">システム概要</a></li>
+<li><a href="#%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3">システムアーキテクチャ</a></li>
+<li><a href="#%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89">フロントエンド</a></li>
+<li><a href="#%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89">バックエンド</a></li>
+<li><a href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E6%A7%8B%E9%80%A0">データベース構造（ER図・テーブル仕様）</a></li>
+<li><a href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%95%E3%83%AD%E3%83%BC%E5%9B%B3">データフロー図</a></li>
+<li><a href="#api%E4%B8%80%E8%A6%A7">API一覧</a></li>
+</ol>
+<hr>
+<h2 id="システム概要">システム概要 </h2>
+<p><strong>ManabiFolio</strong> は、Google Apps Script (GAS) と Google Sheets をベースとした学校向けポートフォリオ管理システムです。</p>
+<h3 id="主要機能">主要機能 </h3>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>説明</th>
+<th>対象ユーザー</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>振り返りポートフォリオ</strong></td>
+<td>生徒が各セッションの振り返りを入力・閲覧</td>
+<td>全ユーザー</td>
+</tr>
+<tr>
+<td><strong>読書履歴調査</strong></td>
+<td>学期ごとの読書記録・目標・振り返りを管理</td>
+<td>全ユーザー</td>
+</tr>
+<tr>
+<td><strong>学級日誌</strong></td>
+<td>クラスごとの日誌・出欠・時間割管理</td>
+<td>全ユーザー</td>
+</tr>
+<tr>
+<td><strong>クラス提出状況（生徒用）</strong></td>
+<td>委員が自クラスの未提出者を確認・催促</td>
+<td>生徒（委員）</td>
+</tr>
+<tr>
+<td><strong>面談記録</strong></td>
+<td>生徒ごとの面談履歴管理</td>
+<td>教員のみ</td>
+</tr>
+<tr>
+<td><strong>教員ダッシュボード</strong></td>
+<td>統計、一覧管理、集計、CSV出力、AI文案生成等</td>
+<td>教員のみ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ユーザー種別と権限">ユーザー種別と権限 </h3>
+<div class="mermaid">graph LR
+    subgraph Users["ユーザー種別"]
+        Student((生徒))
+        Teacher((教員))
+    end
+
+    subgraph StudentAccess["生徒アクセス可能機能"]
+        S1[振り返りポートフォリオ]
+        S2[読書履歴調査]
+        S3[クラス提出状況]
+    end
+
+    subgraph TeacherAccess["教員アクセス可能機能"]
+        T1[振り返りポートフォリオ]
+        T2[読書履歴調査]
+        T3[教員ダッシュボード]
+    end
+
+    Student --&gt; StudentAccess
+    Teacher --&gt; TeacherAccess
+</div><hr>
+<h2 id="システムアーキテクチャ">システムアーキテクチャ </h2>
+<h3 id="全体構成図">全体構成図 </h3>
+<div class="mermaid">flowchart TB
+    subgraph Client["クライアント層"]
+        Browser["Webブラウザ&lt;br/&gt;（PC / タブレット / スマートフォン）"]
+    end
+
+    subgraph Frontend["フロントエンド層"]
+        HTML["index.html&lt;br/&gt;（SPA）"]
+        CSS["埋め込みCSS"]
+        JS["埋め込みJavaScript"]
+    end
+
+    subgraph Backend["バックエンド層（Google Apps Script）"]
+        Entry["Code.gs&lt;br/&gt;エントリーポイント"]
+        Utils["Utils.gs&lt;br/&gt;共通ユーティリティ"]
+        UserMgmt["UserManagement.gs&lt;br/&gt;ユーザー管理"]
+        StudentAPI["StudentAPI.gs&lt;br/&gt;生徒向けAPI"]
+        TeacherAPI["TeacherAPI.gs&lt;br/&gt;教員向けAPI"]
+        CommonAPI["CommonAPI.gs&lt;br/&gt;共通質問管理"]
+        ReadingAPI["ReadingAPI.gs&lt;br/&gt;読書履歴API"]
+        BatchProc["BatchProcessor.gs&lt;br/&gt;バッチ処理"]
+        GeminiAPI["GeminiAPI.gs&lt;br/&gt;AI連携"]
+    end
+
+    subgraph Storage["データ層"]
+        Sheets["Google Sheets&lt;br/&gt;（データベース）"]
+        Drive["Google Drive&lt;br/&gt;（バックアップ）"]
+        Cache["CacheService&lt;br/&gt;（キャッシュ）"]
+    end
+
+    subgraph External["外部サービス"]
+        Gemini["Google Gemini API"]
+    end
+
+    Browser --&gt; HTML
+    HTML --&gt; Entry
+    Entry --&gt; StudentAPI
+    Entry --&gt; TeacherAPI
+    Entry --&gt; ReadingAPI
+    Entry --&gt; CommonAPI
+    StudentAPI --&gt; Sheets
+    TeacherAPI --&gt; Sheets
+    ReadingAPI --&gt; Sheets
+    BatchProc --&gt; Sheets
+    GeminiAPI --&gt; Gemini
+    BatchProc --&gt; Drive
+</div><h3 id="技術スタック">技術スタック </h3>
+<table>
+<thead>
+<tr>
+<th>層</th>
+<th>技術</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>フロントエンド</td>
+<td>HTML5 / CSS3 / JavaScript</td>
+<td>SPAとして<code>index.html</code>に統合</td>
+</tr>
+<tr>
+<td>バックエンド</td>
+<td>Google Apps Script</td>
+<td><code>google.script.run</code>でAPI呼び出し</td>
+</tr>
+<tr>
+<td>データベース</td>
+<td>Google Sheets</td>
+<td>10シート構成</td>
+</tr>
+<tr>
+<td>キャッシュ</td>
+<td>CacheService</td>
+<td>6時間キャッシュ（フォーム設定）</td>
+</tr>
+<tr>
+<td>外部連携</td>
+<td>Google Gemini API</td>
+<td>AI指導要録生成</td>
+</tr>
+<tr>
+<td>バックアップ</td>
+<td>Google Drive</td>
+<td>日次バックアップ</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="フロントエンド">フロントエンド </h2>
+<h3 id="ファイル構成">ファイル構成 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>portfolio_prototype/
+└── index.html    # フロントエンドUI（SPA）
+                  # HTML + CSS + JavaScript が1ファイルに統合
+</code></pre><h3 id="画面構成">画面構成 </h3>
+<div class="mermaid">flowchart TB
+    subgraph Navigation["メインナビゲーション"]
+        Nav1["📖 振り返りポートフォリオ"]
+        Nav2["📚 読書履歴調査"]
+        Nav3["📓 学級日誌"]
+        Nav4["📋 クラス提出状況（生徒用）"]
+        Nav5["📝 面談記録（教員）"]
+        Nav6["👨‍🏫 教員ダッシュボード"]
+    end
+
+    subgraph StudentView["振り返りポートフォリオ画面"]
+        SV1["セッション選択"]
+        SV2["質問リスト・入力フォーム"]
+        SV3["回答履歴表示"]
+        SV4["年間マトリクス表示"]
+    end
+
+    subgraph ReadingView["読書履歴調査画面"]
+        RV1["学期タブ選択"]
+        RV2["目標設定"]
+        RV3["読書記録一覧"]
+        RV4["振り返り入力"]
+    end
+
+    subgraph DiaryView["学級日誌画面"]
+        DV1["カレンダー表示"]
+        DV2["日誌入力・編集"]
+        DV3["時間割・科目マスタ設定"]
+    end
+
+    subgraph ClassStatusView["クラス提出状況画面"]
+        CSV1["ポートフォリオ未提出者確認"]
+        CSV2["読書履歴未入力者確認"]
+    end
+
+    subgraph InterviewView["面談記録画面（教員専用）"]
+        IV1["生徒選択"]
+        IV2["面談履歴一覧"]
+        IV3["面談記録追加・編集"]
+    end
+
+    subgraph TeacherDash["教員ダッシュボード"]
+        TD1["統計カード"]
+        TD2["一覧・管理"]
+        TD3["新規セッション作成"]
+        TD4["共通質問管理"]
+        TD5["全回答閲覧"]
+        TD6["未提出者チェック"]
+        TD7["読書履歴集計"]
+        TD8["クラス別出力"]
+        TD9["AI生成"]
+    end
+
+    Nav1 --&gt; StudentView
+    Nav2 --&gt; ReadingView
+    Nav3 --&gt; DiaryView
+    Nav4 --&gt; ClassStatusView
+    Nav5 --&gt; InterviewView
+    Nav6 --&gt; TeacherDash
+</div><h3 id="主要ui機能">主要UI機能 </h3>
+<table>
+<thead>
+<tr>
+<th>画面</th>
+<th>機能</th>
+<th>使用API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>振り返りポートフォリオ</strong></td>
+<td>セッション選択・回答入力</td>
+<td><code>getFormConfig()</code>, <code>submitForm()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>回答履歴閲覧</td>
+<td><code>getUserHistory()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>年間マトリクス表示</td>
+<td><code>getMyAnnualResponses()</code></td>
+</tr>
+<tr>
+<td><strong>読書履歴調査</strong></td>
+<td>目標設定・記録追加/削除</td>
+<td><code>getReadingData()</code>, <code>setReadingGoal()</code>, <code>addReadingRecord()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>振り返り入力</td>
+<td><code>setReadingReflection()</code></td>
+</tr>
+<tr>
+<td><strong>クラス提出状況</strong></td>
+<td>未提出者/未記録者確認</td>
+<td><code>getSubmissionStatus()</code>, <code>getReadingMissingStudents()</code></td>
+</tr>
+<tr>
+<td><strong>教員ダッシュボード</strong></td>
+<td>統計表示・セッション管理</td>
+<td><code>getDashboardStats()</code>, <code>createSession()</code>, <code>toggleSessionStatus()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>AI文案生成</td>
+<td><code>generateAiGuidance()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="レスポンシブ対応">レスポンシブ対応 </h3>
+<ul>
+<li>PC / タブレット / スマートフォンに対応</li>
+<li>メディアクエリによるレイアウト調整</li>
+<li>教員ダッシュボードのマトリクス表示は横スクロール対応</li>
+</ul>
+<hr>
+<h2 id="バックエンド">バックエンド </h2>
+<h3 id="ファイル構成と役割">ファイル構成と役割 </h3>
+<div class="mermaid">flowchart LR
+    subgraph Core["コア"]
+        Code["Code.gs&lt;br/&gt;エントリーポイント"]
+        Utils["Utils.gs&lt;br/&gt;共通関数"]
+    end
+
+    subgraph UserMgmt["ユーザー管理"]
+        UM["UserManagement.gs"]
+    end
+
+    subgraph APIs["API層"]
+        SA["StudentAPI.gs&lt;br/&gt;生徒向け"]
+        TA["TeacherAPI.gs&lt;br/&gt;教員向け"]
+        CA["CommonAPI.gs&lt;br/&gt;共通質問"]
+        RA["ReadingAPI.gs&lt;br/&gt;読書履歴"]
+        DA["ClassDiaryAPI.gs&lt;br/&gt;学級日誌"]
+    end
+
+    subgraph Background["バックグラウンド処理"]
+        BP["BatchProcessor.gs&lt;br/&gt;キュー処理&lt;br/&gt;バックアップ"]
+    end
+
+    subgraph AI["AI連携"]
+        GA["GeminiAPI.gs&lt;br/&gt;AI文案生成"]
+    end
+
+    Code --&gt; SA
+    Code --&gt; TA
+    Code --&gt; CA
+    Code --&gt; RA
+    Code --&gt; DA
+    SA --&gt; Utils
+    TA --&gt; Utils
+    RA --&gt; Utils
+    DA --&gt; Utils
+    TA --&gt; UM
+    BP --&gt; Utils
+    GA --&gt; Utils
+</div><h3 id="各ファイルの詳細">各ファイルの詳細 </h3>
+<table>
+<thead>
+<tr>
+<th>ファイル</th>
+<th>行数</th>
+<th>主要関数</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="http://Code.gs">Code.gs</a></strong></td>
+<td>249</td>
+<td><code>doGet()</code>, <code>getScriptUrl()</code></td>
+<td>Webアプリのエントリーポイント、HTML配信</td>
+</tr>
+<tr>
+<td><strong><a href="http://Utils.gs">Utils.gs</a></strong></td>
+<td>72</td>
+<td><code>getTargetSpreadsheet()</code>, <code>getUserInfo()</code>, <code>parseJSONSafe_()</code></td>
+<td>共通ユーティリティ関数</td>
+</tr>
+<tr>
+<td><strong><a href="http://UserManagement.gs">UserManagement.gs</a></strong></td>
+<td>252</td>
+<td><code>setupSheets()</code>, <code>registerUserProfile()</code>, <code>getSystemYear()</code></td>
+<td>ユーザー管理、シート初期化、年度管理</td>
+</tr>
+<tr>
+<td><strong><a href="http://StudentAPI.gs">StudentAPI.gs</a></strong></td>
+<td>187</td>
+<td><code>getFormConfig()</code>, <code>submitForm()</code>, <code>getUserHistory()</code>, <code>getMyAnnualResponses()</code></td>
+<td>生徒向けAPI（回答送信・履歴取得）</td>
+</tr>
+<tr>
+<td><strong><a href="http://TeacherAPI.gs">TeacherAPI.gs</a></strong></td>
+<td>454</td>
+<td><code>createSession()</code>, <code>getTeacherAllResponses()</code>, <code>getSubmissionStatus()</code>, <code>getDashboardStats()</code></td>
+<td>教員向けAPI（セッション管理・統計）</td>
+</tr>
+<tr>
+<td><strong><a href="http://CommonAPI.gs">CommonAPI.gs</a></strong></td>
+<td>114</td>
+<td><code>getCommonQuestionSets()</code>, <code>saveCommonQuestionSet()</code>, <code>deleteCommonQuestionSet()</code></td>
+<td>共通質問セット管理</td>
+</tr>
+<tr>
+<td><strong><a href="http://ReadingAPI.gs">ReadingAPI.gs</a></strong></td>
+<td>600</td>
+<td><code>getReadingData()</code>, <code>setReadingGoal()</code>, <code>addReadingRecord()</code>, <code>getReadingStats()</code></td>
+<td>読書履歴管理API</td>
+</tr>
+<tr>
+<td><strong><a href="http://ClassDiaryAPI.gs">ClassDiaryAPI.gs</a></strong></td>
+<td>498</td>
+<td><code>getDiaryEntry()</code>, <code>saveDiaryEntry()</code>, <code>getScheduleMaster()</code>, <code>getSubjectMaster()</code></td>
+<td>学級日誌管理（日誌・時間割・科目マスタ）</td>
+</tr>
+<tr>
+<td><strong><a href="http://InterviewAPI.gs">InterviewAPI.gs</a></strong></td>
+<td>234</td>
+<td><code>getStudentInterviews()</code>, <code>addInterviewRecord()</code>, <code>getInterviewSummaryByClass()</code></td>
+<td>面談記録管理（教員専用）</td>
+</tr>
+<tr>
+<td><strong><a href="http://BatchProcessor.gs">BatchProcessor.gs</a></strong></td>
+<td>643</td>
+<td><code>processAllQueues()</code>, <code>backupDatabase()</code>, <code>flushFormConfigCache()</code></td>
+<td>キュー処理、バックアップ、キャッシュ管理</td>
+</tr>
+<tr>
+<td><strong><a href="http://GeminiAPI.gs">GeminiAPI.gs</a></strong></td>
+<td>370</td>
+<td><code>generateAiGuidance()</code>, <code>generateAiDataCSV()</code></td>
+<td>AI指導要録生成（Gemini連携）</td>
+</tr>
+<tr>
+<td><strong><a href="http://DemoData.gs">DemoData.gs</a></strong></td>
+<td>258</td>
+<td><code>createDummyData()</code>, <code>deleteDummyData()</code></td>
+<td>ダミーデータ作成・削除</td>
+</tr>
+<tr>
+<td><strong><a href="http://Tests.gs">Tests.gs</a></strong></td>
+<td>554</td>
+<td><code>runAllTests()</code>, <code>runLoadTest()</code></td>
+<td>自動テスト・負荷テスト</td>
+</tr>
+</tbody>
+</table>
+<h3 id="キュー処理システム">キュー処理システム </h3>
+<p>高負荷時のデータ整合性を保つため、シャードキューによる非同期処理を実装しています。</p>
+<div class="mermaid">flowchart TB
+    subgraph UserAction["ユーザー操作"]
+        Submit["回答/記録を送信"]
+    end
+
+    subgraph API["API処理"]
+        TryLock["ロック取得試行&lt;br/&gt;（2秒タイムアウト）"]
+        LockSuccess{ロック取得&lt;br/&gt;成功?}
+        DirectWrite["直接書き込み&lt;br/&gt;（即時反映）"]
+        QueueWrite["シャードキューへ書き込み&lt;br/&gt;（Status: pending）"]
+    end
+
+    subgraph Queue["シャードキュー（10分割）"]
+        RQ0["ResponseQueue_0"]
+        RQ1["ResponseQueue_1"]
+        RQN["...ResponseQueue_9"]
+    end
+
+    subgraph BatchJob["バッチ処理&lt;br/&gt;（1分間隔トリガー）"]
+        ProcessQueue["processAllQueues()"]
+        MoveData["キュー→メインシート移動"]
+    end
+
+    subgraph MainTable["メインテーブル"]
+        Responses["Responses"]
+    end
+
+    Submit --&gt; TryLock
+    TryLock --&gt; LockSuccess
+    LockSuccess --&gt;|成功| DirectWrite
+    LockSuccess --&gt;|失敗| QueueWrite
+    DirectWrite --&gt; Responses
+    QueueWrite --&gt; RQ0
+    QueueWrite --&gt; RQ1
+    QueueWrite --&gt; RQN
+    ProcessQueue --&gt; MoveData
+    RQ0 --&gt; MoveData
+    RQ1 --&gt; MoveData
+    RQN --&gt; MoveData
+    MoveData --&gt; Responses
+</div><h3 id="トリガー設定">トリガー設定 </h3>
+<table>
+<thead>
+<tr>
+<th>トリガー種別</th>
+<th>関数</th>
+<th>実行間隔</th>
+<th>目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>時間主導型</td>
+<td><code>processAllQueues()</code></td>
+<td>1分ごと</td>
+<td>キューの処理</td>
+</tr>
+<tr>
+<td>時間主導型</td>
+<td><code>backupDatabase()</code></td>
+<td>毎日AM3:00</td>
+<td>データバックアップ</td>
+</tr>
+<tr>
+<td>時間主導型</td>
+<td><code>cleanupAllQueues()</code></td>
+<td>毎日AM2:00</td>
+<td>古いキューデータの削除</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="データベース構造">データベース構造 </h2>
+<h3 id="er図エンティティ関係図">ER図（エンティティ関係図） </h3>
+<div class="mermaid">erDiagram
+    UserProfiles ||--o{ Responses : "回答"
+    UserProfiles ||--o{ ReadingRecords : "読書記録"
+    UserProfiles ||--o{ ReadingGoals : "読書目標"
+    UserProfiles ||--o{ ReadingReflections : "読書振り返り"
+    UserProfiles ||--o{ InterviewRecords : "面談記録"
+    Sessions ||--o{ Questions : "設問"
+    Sessions ||--o{ Responses : "回答"
+    CommonQuestionSets ||--o{ Sessions : "共通セット"
+    ClassDiaryEntries ||--o{ ClassScheduleMaster : "時間割"
+    ClassDiaryEntries ||--o{ SubjectMaster : "科目"
+
+    UserProfiles {
+        string Year PK
+        string Email PK
+        string Grade
+        string Class
+        int Number
+        string Name
+    }
+
+    Sessions {
+        string SessionID PK
+        string Title
+        string Description
+        string Status
+        datetime CreatedAt
+        string RelatedSetTitle FK
+    }
+
+    Questions {
+        string SessionID FK
+        string QuestionID PK
+        string Type
+        string Label
+        string Options
+        int Min
+        int Max
+        int Order
+    }
+
+    Responses {
+        datetime Timestamp PK
+        string SessionID FK
+        string Email FK
+        json Answers_JSON
+    }
+
+    CommonQuestionSets {
+        string SetID PK
+        string SetTitle
+        string QuestionID
+        string Type
+        string Label
+        string Options
+        int Min
+        int Max
+        int Order
+    }
+
+    ReadingGoals {
+        string Year PK
+        string Email FK
+        int Term PK
+        int TargetBooks
+        datetime UpdatedAt
+    }
+
+    ReadingRecords {
+        string Id PK
+        string Year
+        string Email FK
+        int Term
+        string Category
+        string StartMonth
+        string BookTitle
+        string ReadAmount
+        string Evaluation
+        datetime CreatedAt
+    }
+
+    ReadingReflections {
+        string Year PK
+        string Email FK
+        int Term PK
+        string Reflection
+        datetime UpdatedAt
+    }
+
+    InterviewRecords {
+        string Id PK
+        string StudentEmail FK
+        date InterviewDate
+        json Roles
+        string TeacherEmail
+        string Content
+        datetime CreatedAt
+    }
+
+    SystemConfig {
+        string Key PK
+        string Value
+    }
+</div><h3 id="テーブル一覧と詳細仕様">テーブル一覧と詳細仕様 </h3>
+<h4 id="1-userprofiles生徒プロフィール">1. UserProfiles（生徒プロフィール） </h4>
+<p>生徒の基本情報を管理。年度ごとにレコードが作成されます。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year</td>
+<td>string</td>
+<td>✓</td>
+<td>年度（例: R7年度）</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td>✓</td>
+<td>メールアドレス（主キー）</td>
+</tr>
+<tr>
+<td>Grade</td>
+<td>string</td>
+<td>✓</td>
+<td>学年（1, 2, 3）</td>
+</tr>
+<tr>
+<td>Class</td>
+<td>string</td>
+<td>✓</td>
+<td>クラス（1〜6）</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>int</td>
+<td>✓</td>
+<td>出席番号</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>string</td>
+<td>✓</td>
+<td>氏名</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="2-sessions振り返りセッション">2. Sessions（振り返りセッション） </h4>
+<p>振り返りアンケートの回を管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SessionID</td>
+<td>string</td>
+<td>✓</td>
+<td>セッションID（例: sess_1234）</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>string</td>
+<td>✓</td>
+<td>タイトル（例: 5月の振り返り）</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>string</td>
+<td></td>
+<td>説明文</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>string</td>
+<td>✓</td>
+<td>open（受付中）/ closed（終了）</td>
+</tr>
+<tr>
+<td>CreatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>作成日時</td>
+</tr>
+<tr>
+<td>RelatedSetTitle</td>
+<td>string</td>
+<td></td>
+<td>関連する共通セットのタイトル</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="3-questions設問">3. Questions（設問） </h4>
+<p>各セッションに紐づく設問を管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SessionID</td>
+<td>string</td>
+<td>✓</td>
+<td>所属セッションID</td>
+</tr>
+<tr>
+<td>QuestionID</td>
+<td>string</td>
+<td>✓</td>
+<td>設問ID（例: q_1）</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>string</td>
+<td>✓</td>
+<td>設問タイプ</td>
+</tr>
+<tr>
+<td>Label</td>
+<td>string</td>
+<td>✓</td>
+<td>設問文</td>
+</tr>
+<tr>
+<td>Options</td>
+<td>string</td>
+<td></td>
+<td>選択肢（カンマ区切り）</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>int</td>
+<td></td>
+<td>スライダーの最小値</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>int</td>
+<td></td>
+<td>スライダーの最大値</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>int</td>
+<td>✓</td>
+<td>表示順</td>
+</tr>
+</tbody>
+</table>
+<p><strong>設問タイプ一覧:</strong></p>
+<table>
+<thead>
+<tr>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text</code></td>
+<td>1行テキスト入力</td>
+</tr>
+<tr>
+<td><code>textarea</code></td>
+<td>複数行テキスト入力</td>
+</tr>
+<tr>
+<td><code>radio</code></td>
+<td>ラジオボタン（単一選択）</td>
+</tr>
+<tr>
+<td><code>checkbox</code></td>
+<td>チェックボックス（複数選択）</td>
+</tr>
+<tr>
+<td><code>slider</code></td>
+<td>スライダー（数値入力）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="4-responses回答">4. Responses（回答） </h4>
+<p>生徒の振り返り回答を保存。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timestamp</td>
+<td>datetime</td>
+<td>✓</td>
+<td>回答日時</td>
+</tr>
+<tr>
+<td>SessionID</td>
+<td>string</td>
+<td>✓</td>
+<td>セッションID</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td>✓</td>
+<td>回答者メールアドレス</td>
+</tr>
+<tr>
+<td>Answers_JSON</td>
+<td>json</td>
+<td>✓</td>
+<td>回答データ（JSON形式）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Answers_JSON構造例:</strong></p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"q_1"</span><span class="token operator">:</span> <span class="token string">"テキスト回答"</span><span class="token punctuation">,</span>
+  <span class="token property">"q_2"</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+  <span class="token property">"q_3"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"選択肢A"</span><span class="token punctuation">,</span> <span class="token string">"選択肢B"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h4 id="5-commonquestionsets共通質問セット">5. CommonQuestionSets（共通質問セット） </h4>
+<p>複数回使い回す設問セットのテンプレート。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SetID</td>
+<td>string</td>
+<td>✓</td>
+<td>セットID</td>
+</tr>
+<tr>
+<td>SetTitle</td>
+<td>string</td>
+<td>✓</td>
+<td>セットタイトル</td>
+</tr>
+<tr>
+<td>QuestionID</td>
+<td>string</td>
+<td>✓</td>
+<td>設問ID</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>string</td>
+<td>✓</td>
+<td>設問タイプ</td>
+</tr>
+<tr>
+<td>Label</td>
+<td>string</td>
+<td>✓</td>
+<td>設問文</td>
+</tr>
+<tr>
+<td>Options</td>
+<td>string</td>
+<td></td>
+<td>選択肢</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>int</td>
+<td></td>
+<td>最小値</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>int</td>
+<td></td>
+<td>最大値</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>int</td>
+<td>✓</td>
+<td>表示順</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="6-readinggoals読書目標">6. ReadingGoals（読書目標） </h4>
+<p>各生徒の学期ごとの読書目標を管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year</td>
+<td>string</td>
+<td>✓</td>
+<td>年度</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td>✓</td>
+<td>メールアドレス</td>
+</tr>
+<tr>
+<td>Term</td>
+<td>int</td>
+<td>✓</td>
+<td>学期（1, 2, 3）</td>
+</tr>
+<tr>
+<td>TargetBooks</td>
+<td>int</td>
+<td>✓</td>
+<td>目標冊数</td>
+</tr>
+<tr>
+<td>UpdatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>更新日時</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="7-readingrecords読書記録">7. ReadingRecords（読書記録） </h4>
+<p>生徒が読んだ本の記録を管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>string</td>
+<td>✓</td>
+<td>記録ID</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>string</td>
+<td>✓</td>
+<td>年度</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td>✓</td>
+<td>メールアドレス</td>
+</tr>
+<tr>
+<td>Term</td>
+<td>int</td>
+<td>✓</td>
+<td>学期（1, 2, 3）</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>string</td>
+<td>✓</td>
+<td>種別</td>
+</tr>
+<tr>
+<td>StartMonth</td>
+<td>string</td>
+<td>✓</td>
+<td>読み始めた月</td>
+</tr>
+<tr>
+<td>BookTitle</td>
+<td>string</td>
+<td>✓</td>
+<td>書名</td>
+</tr>
+<tr>
+<td>ReadAmount</td>
+<td>string</td>
+<td>✓</td>
+<td>読んだ量</td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td>string</td>
+<td>✓</td>
+<td>評価</td>
+</tr>
+<tr>
+<td>CreatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>作成日時</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Categoryの値:</strong></p>
+<table>
+<thead>
+<tr>
+<th>値</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>morning</code></td>
+<td>朝読書</td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td>その他</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ReadAmountの値:</strong></p>
+<table>
+<thead>
+<tr>
+<th>値</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>all</code></td>
+<td>全部読んだ</td>
+</tr>
+<tr>
+<td><code>half</code></td>
+<td>半分くらい</td>
+</tr>
+<tr>
+<td><code>little</code></td>
+<td>少しだけ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Evaluationの値:</strong></p>
+<table>
+<thead>
+<tr>
+<th>値</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>great</code></td>
+<td>面白い</td>
+</tr>
+<tr>
+<td><code>ok</code></td>
+<td>普通</td>
+</tr>
+<tr>
+<td><code>below</code></td>
+<td>普通以下</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="8-readingreflections読書振り返り">8. ReadingReflections（読書振り返り） </h4>
+<p>各生徒の学期末の読書振り返りコメント。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year</td>
+<td>string</td>
+<td>✓</td>
+<td>年度</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td>✓</td>
+<td>メールアドレス</td>
+</tr>
+<tr>
+<td>Term</td>
+<td>int</td>
+<td>✓</td>
+<td>学期</td>
+</tr>
+<tr>
+<td>Reflection</td>
+<td>string</td>
+<td>✓</td>
+<td>振り返り内容</td>
+</tr>
+<tr>
+<td>UpdatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>更新日時</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="9-interviewrecords面談記録">9. InterviewRecords（面談記録） </h4>
+<p>教員が生徒と行った面談の記録。年度を跨いで参照可能。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>string</td>
+<td>✓</td>
+<td>記録ID</td>
+</tr>
+<tr>
+<td>StudentEmail</td>
+<td>string</td>
+<td>✓</td>
+<td>生徒メールアドレス</td>
+</tr>
+<tr>
+<td>InterviewDate</td>
+<td>date</td>
+<td>✓</td>
+<td>面談日</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>json</td>
+<td>✓</td>
+<td>対応者の役割（JSON配列）</td>
+</tr>
+<tr>
+<td>TeacherEmail</td>
+<td>string</td>
+<td>✓</td>
+<td>記録した教員のメールアドレス</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>string</td>
+<td>✓</td>
+<td>面談内容</td>
+</tr>
+<tr>
+<td>CreatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>作成日時</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rolesの値:</strong></p>
+<table>
+<thead>
+<tr>
+<th>役割コード</th>
+<th>表示名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>homeroom</code></td>
+<td>担任</td>
+</tr>
+<tr>
+<td><code>assistant</code></td>
+<td>副担任</td>
+</tr>
+<tr>
+<td><code>grade_chief</code></td>
+<td>学年主任</td>
+</tr>
+<tr>
+<td><code>grade_teacher</code></td>
+<td>学年教員</td>
+</tr>
+<tr>
+<td><code>club_advisor</code></td>
+<td>部活動顧問</td>
+</tr>
+<tr>
+<td><code>other</code></td>
+<td>その他</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="10-systemconfigシステム設定">10. SystemConfig（システム設定） </h4>
+<p>システム全体の設定値を管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>string</td>
+<td>✓</td>
+<td>設定キー</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>string</td>
+<td>✓</td>
+<td>設定値</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主要な設定キー:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>systemYear</code></td>
+<td>現在のシステム年度</td>
+<td><code>R7年度</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="11-classdiaryentries学級日誌エントリ">11. ClassDiaryEntries（学級日誌エントリ） </h4>
+<p>各クラス・各日の日誌データを管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grade</td>
+<td>string</td>
+<td>✓</td>
+<td>学年</td>
+</tr>
+<tr>
+<td>Class</td>
+<td>string</td>
+<td>✓</td>
+<td>クラス</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>date</td>
+<td>✓</td>
+<td>日付</td>
+</tr>
+<tr>
+<td>Weather</td>
+<td>string</td>
+<td></td>
+<td>天気</td>
+</tr>
+<tr>
+<td>DayDutyStudents</td>
+<td>json</td>
+<td></td>
+<td>日直生徒（JSON配列）</td>
+</tr>
+<tr>
+<td>Attendance</td>
+<td>json</td>
+<td></td>
+<td>出欠データ（JSON）</td>
+</tr>
+<tr>
+<td>Schedules</td>
+<td>json</td>
+<td></td>
+<td>時間割データ（JSON配列）</td>
+</tr>
+<tr>
+<td>DayReflection</td>
+<td>string</td>
+<td></td>
+<td>一日の振り返り</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>string</td>
+<td></td>
+<td>連絡事項</td>
+</tr>
+<tr>
+<td>UpdatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>更新日時</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="12-classschedulemaster曜日別時間割マスタ">12. ClassScheduleMaster（曜日別時間割マスタ） </h4>
+<p>クラスごとの曜日別デフォルト時間割を管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grade</td>
+<td>string</td>
+<td>✓</td>
+<td>学年</td>
+</tr>
+<tr>
+<td>Class</td>
+<td>string</td>
+<td>✓</td>
+<td>クラス</td>
+</tr>
+<tr>
+<td>DayOfWeek</td>
+<td>int</td>
+<td>✓</td>
+<td>曜日（1=月〜5=金）</td>
+</tr>
+<tr>
+<td>Period</td>
+<td>int</td>
+<td>✓</td>
+<td>時限</td>
+</tr>
+<tr>
+<td>Subject</td>
+<td>string</td>
+<td></td>
+<td>科目名</td>
+</tr>
+<tr>
+<td>UpdatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>更新日時</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="13-subjectmaster科目マスタ">13. SubjectMaster（科目マスタ） </h4>
+<p>クラスごとの科目リストを管理。</p>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>型</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grade</td>
+<td>string</td>
+<td>✓</td>
+<td>学年</td>
+</tr>
+<tr>
+<td>Class</td>
+<td>string</td>
+<td>✓</td>
+<td>クラス</td>
+</tr>
+<tr>
+<td>SubjectName</td>
+<td>string</td>
+<td>✓</td>
+<td>科目名</td>
+</tr>
+<tr>
+<td>DisplayOrder</td>
+<td>int</td>
+<td></td>
+<td>表示順</td>
+</tr>
+<tr>
+<td>UpdatedAt</td>
+<td>datetime</td>
+<td>✓</td>
+<td>更新日時</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="キューシート高負荷時の一時保存">キューシート（高負荷時の一時保存） </h3>
+<h4 id="responsequeue_09振り返り回答キュー">ResponseQueue_0〜9（振り返り回答キュー） </h4>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timestamp</td>
+<td>回答タイムスタンプ</td>
+</tr>
+<tr>
+<td>SessionID</td>
+<td>セッションID</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>ユーザーメールアドレス</td>
+</tr>
+<tr>
+<td>Answers_JSON</td>
+<td>回答データ（JSON形式）</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>pending / processed</td>
+</tr>
+<tr>
+<td>QueuedAt</td>
+<td>キュー追加日時</td>
+</tr>
+</tbody>
+</table>
+<h4 id="readingrecordqueue_09読書記録キュー">ReadingRecordQueue_0〜9（読書記録キュー） </h4>
+<table>
+<thead>
+<tr>
+<th>カラム</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term</td>
+<td>学期</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>種別（朝読書/その他）</td>
+</tr>
+<tr>
+<td>StartMonth</td>
+<td>読み始めた月</td>
+</tr>
+<tr>
+<td>BookTitle</td>
+<td>書籍タイトル</td>
+</tr>
+<tr>
+<td>ReadAmount</td>
+<td>読んだ量</td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td>評価</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>ユーザーメールアドレス</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>pending / processed</td>
+</tr>
+<tr>
+<td>QueuedAt</td>
+<td>キュー追加日時</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="データフロー図">データフロー図 </h2>
+<h3 id="振り返りポートフォリオのデータフロー">振り返りポートフォリオのデータフロー </h3>
+<div class="mermaid">sequenceDiagram
+    participant User as ユーザー
+    participant UI as index.html
+    participant API as StudentAPI.gs
+    participant Cache as CacheService
+    participant DB as Sheets
+
+    User-&gt;&gt;UI: セッション選択
+    UI-&gt;&gt;API: getFormConfig()
+    API-&gt;&gt;Cache: キャッシュ確認
+    alt キャッシュヒット
+        Cache--&gt;&gt;API: キャッシュデータ
+    else キャッシュミス
+        API-&gt;&gt;DB: Sessions/Questions読込
+        DB--&gt;&gt;API: データ
+        API-&gt;&gt;Cache: キャッシュ保存（6時間）
+    end
+    API--&gt;&gt;UI: フォーム設定JSON
+    UI-&gt;&gt;User: フォーム表示
+
+    User-&gt;&gt;UI: 回答入力・送信
+    UI-&gt;&gt;API: submitForm()
+    API-&gt;&gt;API: ロック取得試行
+    alt ロック成功
+        API-&gt;&gt;DB: Responses直接書込
+    else ロック失敗
+        API-&gt;&gt;DB: ResponseQueue書込
+    end
+    API--&gt;&gt;UI: 結果
+    UI-&gt;&gt;User: 完了通知
+</div><h3 id="読書履歴調査のデータフロー">読書履歴調査のデータフロー </h3>
+<div class="mermaid">sequenceDiagram
+    participant User as ユーザー
+    participant UI as index.html
+    participant API as ReadingAPI.gs
+    participant DB as Sheets
+
+    User-&gt;&gt;UI: 学期タブ選択
+    UI-&gt;&gt;API: getReadingData(term)
+    API-&gt;&gt;DB: ReadingGoals読込
+    API-&gt;&gt;DB: ReadingRecords読込
+    API-&gt;&gt;DB: ReadingReflections読込
+    DB--&gt;&gt;API: 各データ
+    API--&gt;&gt;UI: 統合データJSON
+    UI-&gt;&gt;User: データ表示
+
+    User-&gt;&gt;UI: 読書記録追加
+    UI-&gt;&gt;API: addReadingRecord()
+    API-&gt;&gt;API: ロック取得試行
+    alt ロック成功
+        API-&gt;&gt;DB: ReadingRecords直接書込
+    else ロック失敗
+        API-&gt;&gt;DB: ReadingRecordQueue書込
+    end
+    API--&gt;&gt;UI: 結果
+    UI-&gt;&gt;User: 完了通知
+</div><h3 id="バックグラウンド処理のデータフロー">バックグラウンド処理のデータフロー </h3>
+<div class="mermaid">flowchart TB
+    subgraph Trigger["トリガー"]
+        T1["1分間隔トリガー"]
+        T2["日次トリガー（AM3:00）"]
+        T3["日次トリガー（AM2:00）"]
+    end
+
+    subgraph BatchProcess["バッチ処理"]
+        P1["processAllQueues()"]
+        P2["backupDatabase()"]
+        P3["cleanupAllQueues()"]
+    end
+
+    subgraph Queues["キューシート"]
+        RQ["ResponseQueue_0〜9"]
+        RRQ["ReadingRecordQueue_0〜9"]
+    end
+
+    subgraph Main["メインシート"]
+        R["Responses"]
+        RR["ReadingRecords"]
+    end
+
+    subgraph Backup["バックアップ"]
+        Drive["Google Drive&lt;br/&gt;ManabiFolio_backup_YYYYMMDD"]
+    end
+
+    T1 --&gt; P1
+    T2 --&gt; P2
+    T3 --&gt; P3
+
+    P1 --&gt; RQ
+    P1 --&gt; RRQ
+    RQ --&gt; R
+    RRQ --&gt; RR
+
+    P2 --&gt; Drive
+    P3 --&gt; RQ
+    P3 --&gt; RRQ
+</div><hr>
+<h2 id="api一覧">API一覧 </h2>
+<h3 id="codegs"><a href="http://Code.gs">Code.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>doGet()</code></td>
+<td>Webアプリエントリーポイント</td>
+</tr>
+<tr>
+<td><code>getScriptUrl()</code></td>
+<td>WebアプリURL取得（アカウント切替用）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="utilsgs"><a href="http://Utils.gs">Utils.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getTargetSpreadsheet()</code></td>
+<td>データ格納用スプレッドシート取得</td>
+</tr>
+<tr>
+<td><code>getUserInfo()</code></td>
+<td>現在ユーザー情報取得（email, isTeacher）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="usermanagementgs"><a href="http://UserManagement.gs">UserManagement.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>setupSheets()</code></td>
+<td>全シート初期化</td>
+</tr>
+<tr>
+<td><code>resetAllData(confirmation)</code></td>
+<td>データ完全削除</td>
+</tr>
+<tr>
+<td><code>getSystemYear()</code></td>
+<td>システム年度取得</td>
+</tr>
+<tr>
+<td><code>setSystemYear(year)</code></td>
+<td>システム年度設定</td>
+</tr>
+<tr>
+<td><code>checkUserRegistration(email)</code></td>
+<td>ユーザー登録確認</td>
+</tr>
+<tr>
+<td><code>registerUserProfile(...)</code></td>
+<td>ユーザー登録</td>
+</tr>
+<tr>
+<td><code>getClassUserList(grade, cls)</code></td>
+<td>クラス名簿取得</td>
+</tr>
+<tr>
+<td><code>updateUserProfile(...)</code></td>
+<td>ユーザープロフィール更新</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="studentapigs"><a href="http://StudentAPI.gs">StudentAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+<th>フロントエンド</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getFormConfig(includeClosed)</code></td>
+<td>回答フォーム設定取得</td>
+<td>初期ロード</td>
+</tr>
+<tr>
+<td><code>getUserHistory(targetEmail)</code></td>
+<td>回答履歴取得</td>
+<td>履歴表示</td>
+</tr>
+<tr>
+<td><code>submitForm(sessionId, formJson, targetEmail)</code></td>
+<td>回答送信</td>
+<td>回答保存</td>
+</tr>
+<tr>
+<td><code>getMyAnnualResponses(setTitle)</code></td>
+<td>年間回答取得</td>
+<td>マトリクス表示</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="teacherapigs"><a href="http://TeacherAPI.gs">TeacherAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+<th>フロントエンド</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getTeacherAllResponses(sessionId)</code></td>
+<td>セッション回答一覧</td>
+<td>全回答閲覧</td>
+</tr>
+<tr>
+<td><code>createSession(title, desc, questionsJson, relatedSetTitle)</code></td>
+<td>セッション作成</td>
+<td>新規作成</td>
+</tr>
+<tr>
+<td><code>toggleSessionStatus(sessionId, newStatus)</code></td>
+<td>公開/終了切替</td>
+<td>一覧管理</td>
+</tr>
+<tr>
+<td><code>getAnnualResponses(targetSetTitle)</code></td>
+<td>年間回答取得（教員用）</td>
+<td>集計</td>
+</tr>
+<tr>
+<td><code>getTeacherClassData(targetId, grade, cls)</code></td>
+<td>クラス別データ</td>
+<td>クラス別出力</td>
+</tr>
+<tr>
+<td><code>getSubmissionStatus(sessionId, grade, cls)</code></td>
+<td>提出状況</td>
+<td>未提出者チェック</td>
+</tr>
+<tr>
+<td><code>getDashboardStats()</code></td>
+<td>統計カード</td>
+<td>ダッシュボード</td>
+</tr>
+<tr>
+<td><code>getExportTargetList()</code></td>
+<td>出力対象リスト</td>
+<td>クラス別出力</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="commonapigs"><a href="http://CommonAPI.gs">CommonAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getCommonQuestionSets()</code></td>
+<td>共通質問セット一覧取得</td>
+</tr>
+<tr>
+<td><code>saveCommonQuestionSet(setId, setTitle, jsonQuestions)</code></td>
+<td>共通質問セット保存</td>
+</tr>
+<tr>
+<td><code>deleteCommonQuestionSet(setId)</code></td>
+<td>共通質問セット削除</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="readingapigs"><a href="http://ReadingAPI.gs">ReadingAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+<th>フロントエンド</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getReadingData(term, targetEmail)</code></td>
+<td>読書データ取得</td>
+<td>読書履歴タブ</td>
+</tr>
+<tr>
+<td><code>setReadingGoal(term, targetBooks, targetEmail)</code></td>
+<td>目標設定</td>
+<td>目標保存</td>
+</tr>
+<tr>
+<td><code>addReadingRecord(...)</code></td>
+<td>読書記録追加</td>
+<td>記録追加</td>
+</tr>
+<tr>
+<td><code>deleteReadingRecord(recordId, targetEmail)</code></td>
+<td>読書記録削除</td>
+<td>記録削除</td>
+</tr>
+<tr>
+<td><code>updateReadingRecord(...)</code></td>
+<td>読書記録更新</td>
+<td>記録編集</td>
+</tr>
+<tr>
+<td><code>setReadingReflection(term, reflectionText, targetEmail)</code></td>
+<td>振り返り保存</td>
+<td>振り返り入力</td>
+</tr>
+<tr>
+<td><code>getReadingStats(term, grade, cls)</code></td>
+<td>読書統計</td>
+<td>教員集計</td>
+</tr>
+<tr>
+<td><code>getReadingMissingStudents(term, grade, cls)</code></td>
+<td>未入力者</td>
+<td>未入力者チェック</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="classdiaryapigs"><a href="http://ClassDiaryAPI.gs">ClassDiaryAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+<th>フロントエンド</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getDiaryEntry(grade, cls, dateStr)</code></td>
+<td>指定日の日誌取得</td>
+<td>日誌表示</td>
+</tr>
+<tr>
+<td><code>saveDiaryEntry(grade, cls, dateStr, data)</code></td>
+<td>日誌保存</td>
+<td>日誌入力</td>
+</tr>
+<tr>
+<td><code>getMonthDiaries(grade, cls, yearNum, month)</code></td>
+<td>月間日誌一覧</td>
+<td>カレンダー</td>
+</tr>
+<tr>
+<td><code>getScheduleMaster(grade, cls)</code></td>
+<td>曜日別時間割マスタ取得</td>
+<td>時間割設定</td>
+</tr>
+<tr>
+<td><code>saveScheduleMaster(grade, cls, dayOfWeek, schedules)</code></td>
+<td>時間割マスタ保存</td>
+<td>時間割設定</td>
+</tr>
+<tr>
+<td><code>getSubjectMaster(grade, cls)</code></td>
+<td>科目マスタ取得</td>
+<td>科目設定</td>
+</tr>
+<tr>
+<td><code>saveSubjectMaster(grade, cls, subjects)</code></td>
+<td>科目マスタ保存</td>
+<td>科目設定</td>
+</tr>
+<tr>
+<td><code>getClassRoster(grade, cls)</code></td>
+<td>クラス名簿取得</td>
+<td>出欠入力</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="interviewapigs"><a href="http://InterviewAPI.gs">InterviewAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+<th>フロントエンド</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getStudentInterviews(studentEmail)</code></td>
+<td>生徒の面談記録取得</td>
+<td>面談履歴表示</td>
+</tr>
+<tr>
+<td><code>getInterviewSummaryByClass(grade, cls)</code></td>
+<td>クラス別面談記録一覧</td>
+<td>生徒選択</td>
+</tr>
+<tr>
+<td><code>addInterviewRecord(studentEmail, date, roles, content)</code></td>
+<td>面談記録追加</td>
+<td>記録追加</td>
+</tr>
+<tr>
+<td><code>updateInterviewRecord(recordId, date, roles, content)</code></td>
+<td>面談記録更新</td>
+<td>記録編集</td>
+</tr>
+<tr>
+<td><code>deleteInterviewRecord(recordId)</code></td>
+<td>面談記録削除</td>
+<td>記録削除</td>
+</tr>
+<tr>
+<td><code>getInterviewRoleOptions()</code></td>
+<td>対応者役割リスト取得</td>
+<td>役割選択</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="batchprocessorgs"><a href="http://BatchProcessor.gs">BatchProcessor.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>processAllQueues()</code></td>
+<td>全キュー処理（トリガー用）</td>
+</tr>
+<tr>
+<td><code>processResponseQueue_()</code></td>
+<td>振り返りキュー処理</td>
+</tr>
+<tr>
+<td><code>processReadingRecordQueue_()</code></td>
+<td>読書記録キュー処理</td>
+</tr>
+<tr>
+<td><code>cleanupProcessedQueue_()</code></td>
+<td>処理済みデータ削除</td>
+</tr>
+<tr>
+<td><code>cleanupAllQueues()</code></td>
+<td>全キュークリーンアップ</td>
+</tr>
+<tr>
+<td><code>backupDatabase()</code></td>
+<td>DBバックアップ作成</td>
+</tr>
+<tr>
+<td><code>flushFormConfigCache()</code></td>
+<td>フォーム設定キャッシュクリア</td>
+</tr>
+<tr>
+<td><code>initializeShardQueues()</code></td>
+<td>シャードキュー初期作成</td>
+</tr>
+<tr>
+<td><code>getQueueStatus()</code></td>
+<td>キュー状態確認（デバッグ用）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="geminiapigs"><a href="http://GeminiAPI.gs">GeminiAPI.gs</a> </h3>
+<table>
+<thead>
+<tr>
+<th>関数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getAllStudentEmails()</code></td>
+<td>全生徒メール取得</td>
+</tr>
+<tr>
+<td><code>generateAiGuidance(targetEmail)</code></td>
+<td>AI指導要録生成</td>
+</tr>
+<tr>
+<td><code>generateAiDataCSV(grade, cls)</code></td>
+<td>クラス単位AI用CSV生成</td>
+</tr>
+<tr>
+<td><code>generateSingleStudentCSV(email)</code></td>
+<td>個別生徒AI用CSV生成</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="権限チェックのロジック">権限チェックのロジック </h2>
+<h3 id="生徒によるクラス提出状況閲覧">生徒によるクラス提出状況閲覧 </h3>
+<div class="mermaid">flowchart TD
+    A[API呼び出し] --&gt; B{教員か?}
+    B --&gt;|Yes| C[全クラスアクセス可]
+    B --&gt;|No| D[UserProfilesから&lt;br/&gt;自分のgrade/class取得]
+    D --&gt; E{リクエストのgrade/class&lt;br/&gt;= 自分のgrade/class?}
+    E --&gt;|Yes| F[アクセス許可]
+    E --&gt;|No| G[権限エラー]
+</div><hr>
+<h2 id="設定プロパティ">設定プロパティ </h2>
+<p>システムで使用するスクリプトプロパティ:</p>
+<table>
+<thead>
+<tr>
+<th>プロパティ名</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SPREADSHEET_ID</code></td>
+<td>データベーススプレッドシートID</td>
+<td><code><your-spreadsheet-id></code></td>
+</tr>
+<tr>
+<td><code>TEACHER_DOMAIN</code></td>
+<td>教員メールドメイン</td>
+<td><code>@teacher.example.ed.jp</code></td>
+</tr>
+<tr>
+<td><code>STUDENT_DOMAIN</code></td>
+<td>生徒メールドメイン（カンマ区切りで複数可）</td>
+<td><code>@student.example.ed.jp,@demo.manabifolio.local</code></td>
+</tr>
+<tr>
+<td><code>BACKUP_FOLDER_ID</code></td>
+<td>バックアップ先DriveフォルダID</td>
+<td><code><backup-folder-id></code></td>
+</tr>
+<tr>
+<td><code>GEMINI_API_KEY</code></td>
+<td>Gemini APIキー</td>
+<td><code><your-gemini-api-key></code></td>
+</tr>
+<tr>
+<td><code>DB_RESET_KEY</code></td>
+<td>DB初期化用リセットキー</td>
+<td><code><strong-reset-key></code></td>
+</tr>
+<tr>
+<td><code>DEBUG_ENTRY</code></td>
+<td>デバッグモード有効化</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="データ保持ポリシー">データ保持ポリシー </h2>
+<table>
+<thead>
+<tr>
+<th>データ種別</th>
+<th>保持期間</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UserProfiles</td>
+<td>永久</td>
+<td>年度ごとにレコード作成</td>
+</tr>
+<tr>
+<td>Sessions/Questions</td>
+<td>永久</td>
+<td></td>
+</tr>
+<tr>
+<td>Responses</td>
+<td>永久</td>
+<td></td>
+</tr>
+<tr>
+<td>ReadingRecords</td>
+<td>永久</td>
+<td></td>
+</tr>
+<tr>
+<td>ReadingReflections</td>
+<td>永久</td>
+<td></td>
+</tr>
+<tr>
+<td>InterviewRecords</td>
+<td>永久</td>
+<td>年度を跨いで参照可能</td>
+</tr>
+<tr>
+<td>キューシート</td>
+<td>1週間</td>
+<td>処理済みは自動削除</td>
+</tr>
+<tr>
+<td>バックアップ</td>
+<td>30日推奨</td>
+<td>手動管理</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="最終更新">最終更新 </h2>
+<p>2026-01-08</p>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>
